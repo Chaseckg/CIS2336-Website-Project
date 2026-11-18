@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UH SugarLand Student Center</title>
+    <title>Home | UH SugarLand Student Center</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
     
 </head>
 <body>
     
     <header>
         <img src="media/UHLogo.jpg" alt="University of Houston logo" class="logo">
-        <h2 class="site-title">UH Sugar Land Student Center</h2>
-        <nav>
+        <h2 class="siteTitle">UH Sugar Land Student Center</h2>
+        <nav class="mainNav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="booking.html">Room Booking</a></li>
-                <li><a href="gallery.html">FAQ</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="references.html">Home</a></li>
+                <li><a href="references.html">References</a></li>
             </ul>
         </nav>
 
@@ -30,16 +34,57 @@
     <main>
         <section class="welcome">
             <h1>Welcome to the UH Sugar Land Student Center</h1>
-            <p>Text about the student center goes here</p>
+            <p>Your space on campus to study, meet people, eat, and relax between classes.
+                Find out what the center offers or reserve a room in just a few clicks. 
+            </p>
             <a href="booking.html" class="btn">Book a Room</a>
         </section>
-    </main>    
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <img
-        </div>
+   <section class="services">
+      <h2>What the Student Center Offers</h2>
+
+      <div class="service-list">
+        <article class="service-card">
+          <span class="material-symbols-outlined service-icon" aria-hidden="true">calendar_month</span>
+          <h3>Room Booking</h3>
+          <p>Reserve one of five rooms for individual study, group projects, or club meetings.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="material-symbols-outlined service-icon" aria-hidden="true">restaurant</span>
+          <h3>Food</h3>
+          <p>Grab a meal or a snack without leaving campus between classes.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="material-symbols-outlined service-icon" aria-hidden="true">chair</span>
+          <h3>Lounging</h3>
+          <p>Kick back in comfortable seating areas to relax, recharge, or hang out with friends.</p>
+        </article>
+      </div>
     </section>
+
+        <section class="contact">
+      
+      <div class="contact-info">
+        <h2>Developer Contact</h2>
+        <p>
+          <span class="material-symbols-outlined contact-icon" aria-hidden="true">person</span>
+          Chase Gressett
+        </p>
+        <p>
+          <span class="material-symbols-outlined contact-icon" aria-hidden="true">mail</span>
+          <a href="mailto:ckgressett@cougarnet.uh.edu">ckgressett@cougarnet.uh.edu</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 UH Sugar Land Student Center</p>
+  </footer>
+
 </body>
 </html>
