@@ -1,31 +1,26 @@
-/* =========================================================
-   UH Sugar Land Student Center - Shared Stylesheet
-   Design source: Phase 1 Plan & Design document
-   ========================================================= */
 
-/* ---------- Design tokens ---------- */
 :root {
-    /* Colors (from the Phase 1 palette) */
+    
     --uh-red: #CC0033;
-    --uh-red-dark: #A3002A;   /* hover state for red buttons/links */
+    --uh-red-dark: #A3002A;   
     --gold: #D4AF37;
-    --gold-dark: #B8962B;     /* hover state for gold elements */
+    --gold-dark: #B8962B;     
     --white: #FFFFFF;
     --light-gray: #F4F4F4;
     --dark-gray: #333333;
 
-    /* Fonts */
+    
     --font-heading: "Montserrat", Arial, sans-serif;
     --font-body: "Roboto", Arial, sans-serif;
 
-    /* Spacing & shape */
+    
     --content-width: 1100px;
     --radius: 8px;
     --shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     --transition: 0.2s ease;
 }
 
-/* ---------- Base ---------- */
+
 *,
 *::before,
 *::after {
@@ -49,7 +44,7 @@ body {
 }
 
 main {
-    flex: 1; /* keeps the footer at the bottom on short pages */
+    flex: 1; 
 }
 
 h1,
@@ -77,7 +72,7 @@ a:hover {
     color: var(--uh-red-dark);
 }
 
-/* Visible keyboard focus on every interactive element */
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -92,7 +87,7 @@ img {
     display: block;
 }
 
-/* ---------- Buttons ---------- */
+
 .btn,
 .btn-secondary {
     display: inline-block;
@@ -129,7 +124,7 @@ img {
     transform: translateY(-2px);
 }
 
-/* ---------- Header & navigation ---------- */
+
 header {
     display: flex;
     align-items: center;
@@ -182,13 +177,13 @@ header {
     color: var(--white);
 }
 
-/* Current page indicator */
+
 .mainNav a.active {
     background-color: var(--white);
     color: var(--uh-red);
 }
 
-/* ---------- Home: hero / welcome ---------- */
+
 .welcome {
     display: flex;
     flex-direction: column;
@@ -197,11 +192,10 @@ header {
     min-height: 70vh;
     padding: 4rem max(1.5rem, calc((100% - var(--content-width)) / 2));
     color: var(--white);
-    /* Dark overlay keeps text readable over the photo.
-       To add the Student Center photo, append it as a second layer, e.g.
-       linear-gradient(...), url("media/studentCenter.jpg") center / cover no-repeat; */
+    
     background:
         linear-gradient(110deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.35) 70%),
+        url("media/student_center_south.jpg") center / cover no-repeat,
         var(--dark-gray);
 }
 
@@ -216,7 +210,6 @@ header {
     margin-bottom: 1.75rem;
 }
 
-/* ---------- Home: services ---------- */
 .services {
     padding: 4.5rem 1.5rem;
     background-color: var(--white);
@@ -245,7 +238,7 @@ header {
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
-/* Alternate red / gold accents, per the palette plan */
+
 .service-card:nth-child(even) {
     border-top-color: var(--gold);
 }
@@ -264,7 +257,7 @@ header {
     margin: 0;
 }
 
-/* ---------- Home: developer contact ---------- */
+
 .contact {
     display: flex;
     align-items: center;
@@ -274,7 +267,6 @@ header {
     background-color: var(--light-gray);
 }
 
-/* Optional photo: <img class="contact-photo" ...> inside .contact */
 .contact-photo {
     width: 160px;
     height: 160px;
@@ -299,7 +291,7 @@ header {
     word-break: break-word;
 }
 
-/* ---------- Footer ---------- */
+
 .site-footer {
     padding: 1.5rem;
     background-color: var(--dark-gray);
@@ -312,7 +304,7 @@ header {
     margin: 0;
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 900px) {
     header {
         flex-wrap: wrap;
@@ -337,7 +329,7 @@ header {
 
 @media (max-width: 600px) {
     header {
-        position: static; /* don't let a tall header cover the screen */
+        position: static; 
     }
 
     .welcome {
