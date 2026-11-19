@@ -304,6 +304,93 @@ header {
     margin: 0;
 }
 
+/* ---------- FAQ page ---------- */
+/* Light-gray page background with white cards, per the FAQ wireframe */
+main:has(.faq) {
+    background-color: var(--light-gray);
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+.faq h1 {
+    color: var(--uh-red);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    background-color: var(--white);
+    border-left: 4px solid var(--uh-red);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+/* The question is a full-width button: text on the left, arrow on the right */
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    padding: 1.15rem 1.5rem;
+    border: none;
+    background-color: var(--white);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: left;
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.faq-question:hover {
+    background-color: var(--light-gray);
+    color: var(--uh-red);
+}
+
+.faq-question:focus-visible {
+    outline-offset: -3px; /* keep the gold focus ring inside the card */
+}
+
+.faq-arrow {
+    flex-shrink: 0;
+    color: var(--uh-red);
+    transition: transform var(--transition);
+}
+
+/* Open state: script.js sets aria-expanded="true" on click */
+.faq-question[aria-expanded="true"] {
+    color: var(--uh-red);
+}
+
+.faq-question[aria-expanded="true"] .faq-arrow {
+    transform: rotate(180deg);
+    color: var(--gold);
+}
+
+.faq-item:has(.faq-question[aria-expanded="true"]) {
+    border-left-color: var(--gold);
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.25rem;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-answer a {
+    font-weight: 500;
+}
+
 
 @media (max-width: 900px) {
     header {
@@ -349,5 +436,18 @@ header {
 
     .contact-info p {
         justify-content: center;
+    }
+
+    .faq {
+        padding: 3rem 1rem;
+    }
+
+    .faq-question {
+        padding: 1rem 1.15rem;
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 1.15rem 1rem;
     }
 }
