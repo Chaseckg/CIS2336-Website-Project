@@ -1,51 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ | UH SugarLand Student Center</title>
-      <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | UH Sugar Land Student Center</title>
 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
 <body>
-           <header>
+
+  
+     <header>
         <img src="media/UHLogo.jpg" alt="University of Houston logo" class="logo">
         <h2 class="siteTitle">UH Sugar Land Student Center</h2>
         <nav class="mainNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="booking.html">Room Booking</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="references.html">References</a></li>
             </ul>
         </nav>
-        </header>
 
+    
+    </header>
+    
+  <main>
+    <section class="faq">
+      <h1>Frequently Asked Questions</h1>
 
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+          What is the Student Center?
+          <span class="material-symbols-outlined faq-arrow" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-1" hidden>
+          <p>
+            The UH Sugar Land Student Center is a space on campus where students can study,
+            meet with groups, grab food, and relax between classes.
+          </p>
+        </div>
+      </div>
 
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+          Who can use the Student Center?
+          <span class="material-symbols-outlined faq-arrow" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-2" hidden>
+          <p>
+            The Center is open to UH Sugar Land students, faculty, and staff. Visitors are
+            welcome in the common areas.
+          </p>
+        </div>
+      </div>
 
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+          What rooms are available?
+          <span class="material-symbols-outlined faq-arrow" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-3" hidden>
+          <p>
+            The Center has five bookable rooms, from small study rooms for one or two people
+            to larger rooms for club and group meetings. You can see each room's capacity and
+            description on the <a href="booking.html">Room Booking page</a>.
+          </p>
+        </div>
+      </div>
 
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+          How do I reserve a room?
+          <span class="material-symbols-outlined faq-arrow" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-4" hidden>
+          <p>
+            Go to the <a href="booking.html">Room Booking page</a>, choose a room, and fill out
+            the form with your name, number of attendees, date, and start and end times.
+            Then click Submit.
+          </p>
+        </div>
+      </div>
 
+      
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+          What happens after I book?
+          <span class="material-symbols-outlined faq-arrow" aria-hidden="true">expand_more</span>
+        </button>
+        <div class="faq-answer" id="faq-answer-5" hidden>
+          <p>
+            You'll see a message right away. If the room is available for your date and time,
+            your reservation is confirmed. If it's already taken, you'll be told it was declined
+            so you can pick a different room or time.
+          </p>
+        </div>
+      </div>
 
+    </section>
+  </main>
 
-
-
-
-
-
-
-
-
-
-
-        
-      <footer class="site-footer">
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
     <p>&copy; 2026 UH Sugar Land Student Center</p>
   </footer>
+
+  
 </body>
 </html>
